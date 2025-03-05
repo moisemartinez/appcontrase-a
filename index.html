@@ -13,7 +13,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: var(--bg-color);
+            background: url('descarga.jpg') no-repeat center center/cover;
             color: var(--text-color);
             display: flex;
             justify-content: center;
@@ -23,12 +23,16 @@
             flex-direction: column;
         }
         .container {
-            background: #2a2a3a;
+            background: rgba(42, 42, 58, 0.9);
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             width: 90%;
             max-width: 400px;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
         }
         input, button {
             width: 100%;
@@ -49,6 +53,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="URL_DEL_LOGO" alt="Logo" class="logo">
         <h2>Generador de Contraseñas</h2>
         <input type="text" id="password" readonly>
         <button onclick="generatePassword()">Generar Contraseña</button>
